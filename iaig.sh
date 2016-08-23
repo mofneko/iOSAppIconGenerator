@@ -33,6 +33,7 @@ sips -Z 58 ${srcfile} --out ${outdir}/Icon-Small@2x.png
 sips -Z 87 ${srcfile} --out ${outdir}/Icon-Small@3x.png
 sips -Z 57 ${srcfile} --out ${outdir}/Icon.png
 sips -Z 114 ${srcfile} --out ${outdir}/Icon@2x.png
+sips -Z 167 ${srcfile} --out ${outdir}/Icon-167.png
 
 cat << \EOF > ${outdir}/Contents.json
 {
@@ -149,6 +150,12 @@ cat << \EOF > ${outdir}/Contents.json
       "size" : "76x76",
       "idiom" : "ipad",
       "filename" : "Icon-76@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "83.5x83.5",
+      "filename" : "Icon-167.png",
       "scale" : "2x"
     }
   ],
